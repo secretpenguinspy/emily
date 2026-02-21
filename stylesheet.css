@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'NimbusWeb';
+    src: url(/fonts/NimbusSans-Regular.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'NimbusWeb', Helvetica, sans-serif ;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: normal;
+    background-color: rgb(246, 246, 246);
+}
+
+.container{
+
+    margin-left: 50px;
+    display: flex;
+    height: 100vh;
+}
+
+.container p{
+    color: rgb(255, 152, 210);
+}
+
+.container a{
+    text-decoration: underline;
+    font-family: 'NimbusWeb', Helvetica, sans-serif ;
+    color:  rgb(255, 152, 210);
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+.column-1{
+    max-width: 50%;
+}
+.column-2{
+    margin: auto;
+}
+.column-2 img{
+max-width: 500px;
+margin-top: -130px;
+
+}
+
+
+/* MAIL CLUB */
+
+.grid{
+    max-width: 95%;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid img{
+    max-width: 90%;
+}
+
+@media screen and  (max-width: 760px) {
+
+    .container{
+        flex-direction: column;
+        margin: auto;
+        max-width: 95%;
+        font-size: 20px;
+    }
+    .column-1{
+        order: 2;
+        max-width: 100%;
+    }
+    .column-2{
+        order: 1;
+    }
+    .column-2 img{
+max-width: 100%;
+margin-top: 20px;
+    }
+    
+}
